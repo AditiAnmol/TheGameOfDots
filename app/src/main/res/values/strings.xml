@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">The Game Of Dots</string>
+    <string name="new_game">Reset</string>
+    <string name="score">Points</string>
+    <string name="moves">Moves Left</string>
+</resources>
