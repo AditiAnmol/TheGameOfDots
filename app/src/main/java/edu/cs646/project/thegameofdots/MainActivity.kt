@@ -15,7 +15,7 @@ import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import kotlin.math.abs
 
-const val SHAKE_THRESHOLD = 2
+const val SHAKE_THRESHOLD = 500
 
 class MainActivity : AppCompatActivity(), SensorEventListener {
 
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
         startNewGame()
 
         // For testing in the emulator
-        scoreTextView.setOnClickListener { newGameClick() }
+        scoreTextView.setOnClickListener { startNewGame() }
     }
 
     override fun onDestroy() {
